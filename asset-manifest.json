@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/IGNews/static/css/main.75fb39cb.css",
-    "main.js": "/IGNews/static/js/main.833ee094.js",
+    "main.js": "/IGNews/static/js/main.be110cc8.js",
     "static/js/453.b2157c12.chunk.js": "/IGNews/static/js/453.b2157c12.chunk.js",
     "static/media/spinner.gif": "/IGNews/static/media/spinner.0e7f1d4b8f9dc3baa30c.gif",
     "index.html": "/IGNews/index.html",
     "main.75fb39cb.css.map": "/IGNews/static/css/main.75fb39cb.css.map",
-    "main.833ee094.js.map": "/IGNews/static/js/main.833ee094.js.map",
+    "main.be110cc8.js.map": "/IGNews/static/js/main.be110cc8.js.map",
     "453.b2157c12.chunk.js.map": "/IGNews/static/js/453.b2157c12.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.75fb39cb.css",
-    "static/js/main.833ee094.js"
+    "static/js/main.be110cc8.js"
   ]
 }
