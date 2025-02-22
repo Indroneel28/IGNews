@@ -1,4 +1,7 @@
 import React from 'react'
+import { useState, useEffect } from 'react';
+
+
 
 export default function NewsItem(props) {
 
@@ -6,11 +9,31 @@ export default function NewsItem(props) {
   let { title, description, imageUrl, newsUrl, author, date, source, mode } = props;
   //destructuring the props
 
+
+   // State to store the generated image URL
+   const [generatedImage, setGeneratedImage] = useState('');
+
+  function generate() {
+    const images = [
+      './breakingNews.jpg',
+      './breakingNews2.jpg',
+      './breakingNews3.jpg',
+      './breakingNews6.jpg'
+    ];
+    const num = Math.floor(Math.random() * images.length);
+    return images[num];
+  }
+
+  // Use useEffect to set the generated image once when the component mounts
+  useEffect(() => {
+    setGeneratedImage(generate());
+  }, []);
+
   return (
     <div className='my-3'>
-      <div className="card" style={{border: "3px solid blue", borderRadius: "7px"}}>
+      <div className="card" style={{ border: "3px solid blue", borderRadius: "7px" }}>
         <span className="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary">{source}</span>
-        <img src={imageUrl===null ? "./breakingNews.jpg": imageUrl} className="card-img-top" alt="Image" />
+        <img src={imageUrl || generatedImage} className="card-img-top" alt="Breaking News" />
         <div className="card-body"
           style={{
             backgroundColor: mode === 'light' ? '#90e0ef' : '#00003e',

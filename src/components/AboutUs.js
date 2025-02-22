@@ -30,7 +30,7 @@ export default function AboutUs(props) {
   return (
     <>
       <div className="container rounded py-4 my-4 px-4" style={myStyle3}>
-      <h2 style={myStyle2}>Devloped and Managed by Indroneel</h2>
+      <h2 style={myStyle2}>Developed and Managed by Indroneel</h2>
       <p className='justify-content-center'>Hello, I am Indroneel Goswami, a student at Institute of Technical Education and Research, Siksha 'O' Anusandhan University, Bhubaneswar, with a passion for software development. I am dedicated to honing my skills in HyperText Markup Language (HTML), Cascading Style Sheets (CSS), JavaScript (JS), and exploring new technologies like Application Programming Interfaces (APIs) to create impactful solutions. I have also delved into JavaScript, React.js, Data Structures and Algorithms (DSA), Git, and Spring Boot to broaden my expertise in building robust software solutions.</p>
       </div>
       <div className="container rounded py-4 my-4" style={myStyle3}>

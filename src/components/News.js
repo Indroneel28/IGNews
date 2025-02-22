@@ -23,8 +23,9 @@ export default function News(props) {
 
     setLoading(true); //Loading buffering will show
 
-    let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`;
-    //await can be used only under aync
+    let url = `https://newsapi.org/v2/top-headlines?category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`;
+
+    
 
     props.setProgress(40);
 
@@ -52,7 +53,7 @@ export default function News(props) {
 
 
 
-  //componentDidMount() will run after the execution of render
+  // // componentDidMount() will run after the execution of render
   // async componentDidMount() {
   //   updateNews();
   // }
@@ -67,7 +68,9 @@ export default function News(props) {
 
   const fetchMoreData = async () => {
 
-    let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page + 1}&pageSize=${props.pageSize}`;
+    let url = `https://newsapi.org/v2/top-headlines?category=${props.category}&apiKey=${props.apiKey}&page=${page + 1}&pageSize=${props.pageSize}`;
+    
+
     //await can be used only under aync
     setPage(page + 1); //Loading buffering will show
 
@@ -121,7 +124,6 @@ export default function News(props) {
 
 
 News.defaultProps = {
-  country: "in",
   pageSize: 8,
   category: 'general',
 }
